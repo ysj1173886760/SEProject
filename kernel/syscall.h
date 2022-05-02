@@ -20,3 +20,12 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+#define SYS_thread_create 22
+#define SYS_mutex_alloc   23
+#define SYS_mutex_lock    24
+#define SYS_mutex_unlock  25
+#define SYS_cv_alloc      26
+#define SYS_cv_wait       27
+#define SYS_cv_signal     28
+#define SYS_mutex_free    29
+#define SYS_cv_free       30
