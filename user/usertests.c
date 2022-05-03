@@ -702,8 +702,9 @@ exectest(char *s)
   if (wait(&xstatus) != pid) {
     printf("%s: wait failed!\n", s);
   }
-  if(xstatus != 0)
+  if(xstatus != 0) {
     exit(xstatus);
+  }
 
   fd = open("echo-ok", O_RDONLY);
   if(fd < 0) {
